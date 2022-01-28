@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconne ct" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section id="hangman">
+    
+        <div class="verdict">
+          <p class="lose">>GAME OVER</p>
+          <p class="win">>YOU WIN</p>
+        </div>
+        <article id="row">
+            <div id="player-guess-container">
+              <p class="description">Select a question to begin</p>
+              <div class="categories">
+                <!-- <button class="animals new_game">Animals</button> -->
+                <button class="one new_game" data-toggle="collapse" data-target="#demo1">Question 1</button>
+
+                <div id="demo1" class="collapse">
+                WHAT'S THE HIDDEN MESSAGE?<br>
+                Nullify every principle of existential demise,insights will soon enlighten your eyes.
+                </div>
+<br>
+                <button class="two new_game" data-toggle="collapse" data-target="#demo2">Question 2</button>
+
+                <div id="demo2" class="collapse">
+                  Die without me, never thank me. Walk right through me, never feel me. Always watching, never speaking.<br>What am I?
+                </div>
+<br>
+                <button class="three new_game" data-toggle="collapse" data-target="#demo3">Question 3</button>
+
+                <div id="demo3" class="collapse">
+               Wash me and I won't be clean, don't wash me and I'll be clean.<br>What am I?
+                </div>
+<br>
+                <button class="four new_game" data-toggle="collapse" data-target="#demo4">Question 4</button>
+
+                <div id="demo4" class="collapse">
+               I have no mouth but I eat many things.I fear water, but I love wind.<br>What am I?
+                </div>
+
+
+                
+
+
+
+<!-- 
+                <button class="cities new_game">Cities</button>
+                <button class="star wars new_game">Star Wars</button> -->
+              </div>
+
+
+              <div class="all_keys">
+                <div class="key_row_one">
+                  <button class="q guess">Q</button>
+                  <button class="w guess">W</button>
+                  <button class="e guess">E</button>
+                  <button class="r guess">R</button>
+                  <button class="t guess">T</button>
+                  <button class="y guess">Y</button>
+                  <button class="u guess">U</button>
+                  <button class="i guess">I</button>
+                  <button class="o guess">O</button>
+                  <button class="p guess">P</button>
+                </div>
+                <div class="key_row_two">
+                  <button class="a guess">A</button>
+                  <button class="s guess">S</button>
+                  <button class="d guess">D</button>
+                  <button class="f guess">F</button>
+                  <button class="g guess">G</button>
+                  <button class="h guess">H</button>
+                  <button class="j guess">J</button>
+                  <button class="k guess">K</button>
+                  <button class="l guess">L</button>
+                </div>
+                <div class="key_row_three">
+                  <button class="z guess">Z</button>
+                  <button class="x guess">X</button>
+                  <button class="c guess">C</button>
+                  <button class="v guess">V</button>
+                  <button class="b guess">B</button>
+                  <button class="n guess">N</button>
+                  <button class="m guess">M</button>
+                </div>
+              </div>
+            </div>
+            <div id="player-status">
+              <div class="bad_guess"></div>
+              <svg width="240" height="500" xmlns="http://www.w3.org/2000/svg" style="margin-left:90%;">
+                <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+               
+                <g stroke="null">
+                 <title>background</title>
+                 <rect x="-1" y="-1" width="212" height="500" id="canvas_background" stroke="null"/>
+                 <g id="canvasGrid" display="none" stroke="null">
+                  <rect id="svg_1" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+                 </g>
+                </g>
+                <g stroke="null">
+                 <title>Layer 1</title>
+                 <rect stroke="#000" class="gallow" fill="#FFAE42" stroke-width="0" x="45.31816" y="15.45313" width="10" height="420" id="svg_4"/>
+                 <rect stroke="#000" class="gallow" fill="#FFAE42" stroke-width="0" stroke-opacity="null" x="5.0242" y="425" width="123.5334" height="10" id="svg_5"/>
+                 <rect stroke="#000" class="gallow" fill="#FFAE42" stroke-width="0" stroke-opacity="null" x="45.8182" y="12.99997" width="125" height="10" id="svg_7"/>
+                 <rect stroke="#000" class="gallow" fill="#FFAE42" stroke-width="0" stroke-opacity="null" x="163" y="13.75755" width="10" height="60" id="svg_17"/>
+                  <ellipse stroke="#000" class="head" fill="#FFAE42" stroke-width="0" stroke-opacity="null" cx="170" cy="90" id="svg_18" rx="35" ry="35"/>
+                 <rect stroke="#000" class="neck" fill="#FFAE42" stroke-width="0" x="165" y="90" width="7" height="110" id="svg_32"/>
+                 <rect transform="rotate(139.71775817871094 136.7581787109375,85.96707153320314) " stroke="#000" class="left_arm" fill="#FFAE42" stroke-width="0" x="183" y="-20" width="7" height="70" id="svg_36"/>
+                 <rect stroke="#000" class="torso" fill="#FFAE42" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="165" y="200" width="7" height="80" id="svg_38"/>
+                 <rect transform="rotate(38.08864974975586 151.6085357666016,85.35657501220703) " stroke="#000" class="right_arm" fill="#FFAE42" stroke-width="0" x="235" y="97" width="7" height="70" id="svg_34"/>
+                 <rect transform="rotate(-146.4536590576172 137.6775360107422,123.99925231933595) " stroke="#000" class="left_leg" fill="#FFAE42" stroke-width="0" x="20" y="-80" width="7" height="90" id="svg_41"/>
+                 <rect transform="rotate(-30.7056827545166 150.40476989746102,123.9992446899414) " stroke="#000" class="right_leg" fill="#FFAE42" stroke-width="0" x="83" y="265" width="7" height="90" id="svg_2"/>
+                </g>
+               </svg>
+          </div>
+        </article>
+        <div id="word-container">
+          <div id="current-word">
+          </div>
+        </div>
+      </section>
+      <script src="script.js"></script>
+</body>
+</html>

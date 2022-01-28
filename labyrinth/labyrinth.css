@@ -1,0 +1,41 @@
+body{
+    background-image: url(./images/img2_dark.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+.center{
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+   }
+  
+   .play{
+       background-color: transparent;
+      padding: 1rem 2.5rem;
+       border: 3px solid white;
+       color: white;
+       border-radius: 50px;
+       font-size: 1.5rem;
+   }
+
+   .play:hover{
+color: #FFAE42;
+box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.5);
+   }
+
+
+.title{
+    height: 400px;
+    width: 1200px;
+    margin-left: 8%;
+    margin-top: 6%;
+   position: absolute;
+
+  
+}
